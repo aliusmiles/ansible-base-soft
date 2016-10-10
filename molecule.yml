@@ -1,0 +1,22 @@
+---
+driver:
+  name: docker
+
+docker:
+  containers:
+
+    - name: ansible-base-soft-ubuntu-xenial
+      image: ubuntu
+      image_version: xenial
+
+    - name: ansible-base-soft-ubuntu-trusty
+      image: ubuntu
+      image_version: trusty
+
+    - name: ansible-base-soft-centos-7
+      image: centos
+      image_version: 7
+
+    - name: ansible-base-soft-centos-6
+      image: centos
+      image_version: 6

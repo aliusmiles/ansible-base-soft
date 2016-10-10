@@ -1,0 +1,12 @@
+---
+# RedHat based OS vars file for ansible-base-soft
+software_list:
+  - vim-enhanced
+  - nc
+  - wget
+  - rsync
+  - net-tools
+  - telnet
+  - tcpdump
+  - sudo
+  - strace
