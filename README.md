@@ -13,7 +13,7 @@ List of software to install
 ## Example
    - hosts: all
      roles:
-       - role: ansible-common
+       - role: ansible-base-soft
 
 
 ## License

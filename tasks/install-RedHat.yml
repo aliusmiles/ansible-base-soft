@@ -1,6 +1,0 @@
----
-- name: Install software (RedHat-based OS)
-  yum:
-    name: "{{ item }}"
-    state: present
-  with_items: "{{ software_list }}"

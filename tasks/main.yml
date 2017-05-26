@@ -1,7 +1,8 @@
 ---
-# tasks file for ansible-base-soft
-- name: Include OS-specific variables
-  include_vars: "{{ ansible_os_family }}.yml"
-
-- name: Include OS-specific install tasks
-  include: "install-{{ ansible_os_family }}.yml"
+- name: Install software
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ soft.generic }}"
+    - "{{ soft[ansible_os_family] }}"

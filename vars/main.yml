@@ -1,0 +1,19 @@
+---
+# vars for ansible-base-soft
+soft:
+  generic:
+    - wget
+    - rsync
+    - net-tools
+    - telnet
+    - tcpdump
+    - sudo
+    - strace
+
+  RedHat:
+    - vim-enhanced
+    - nc
+
+  Debian:
+    - vim
+    - netcat-openbsd
